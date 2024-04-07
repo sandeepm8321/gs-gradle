@@ -25,6 +25,8 @@ jobs:
         run: | 
           cd initial
           gradle build
+          gradle wrapper
+          gradle run
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
